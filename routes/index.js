@@ -1,20 +1,13 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
+const { ensureAuth } = require("../middleware/auth");
+const Story = require("../models/Story");
 
-//@desc LoginLanding page
-//@route GET /
+//@desc  Show add page
+//@route GET / / stories /add
 
-router.get('/', (req, res) =>{
-    res.render('login', {
-        layout: 'login',
-    });
-})
+router.get("/ass", ensureAuth, (req, res) => {
+  res.render('stories/add')
+});
 
-//@desc Dashboard
-//@route GET/ Dashboard
-
-router.get('/dashboard', (req, res)=>{
-   res.render('dashboard')
-})
-
-module.exports = router
+module.exports = router;
