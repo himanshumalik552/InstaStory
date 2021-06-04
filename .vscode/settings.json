@@ -5,10 +5,12 @@
         "apps",
         "author",
         "b",
+        "basicstyles",
         "bsft",
         "bu",
         "bugs",
         "bwmdz",
+        "ckeditor",
         "com",
         "connect",
         "create",
@@ -77,6 +79,7 @@
         "start",
         "story",
         "t",
+        "toolbar",
         "trigger",
         "type",
         "uq",
@@ -87,6 +90,7 @@
         "vp",
         "vrrm",
         "web",
+        "wysiwygarea",
         "ya",
         "yxnb"
     ]
