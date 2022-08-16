@@ -39,7 +39,7 @@ app.use(
 );
 
 //Logging
-if (process.env.NODE_ENV === "development") {
+if (process.env.NODE_ENV || 3000 === "development") {
   app.use(morgan("dev"));
 }
 
